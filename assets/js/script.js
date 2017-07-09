@@ -21,7 +21,7 @@ var commands={
 "linkedin":"<br>Yes, I am a professional<br><br>",
 "github":"<br>Meh, huge volume of css and js<br><br>",
 "gany":"<br>Simha _/\\_<br><br>",
-"sandi":"<br>Zaga Zaga <span style='background:url(assets/img/giphy.gif);width:20px;height:20px;background-size:cover;position:relative;display:block'></span><br>",
+"sandi":"Zaga Zaga <span style='background:url(assets/img/giphy.gif);width:20px;height:20px;background-size:cover;position:relative;display:inline-block'></span><br>",
 "sara":"<br>Chulbuli <span style='color:red;'>&hearts;</span><br><br>"
 };
 var option='n';
