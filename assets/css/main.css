@@ -141,7 +141,7 @@ a {
     color: inherit
 }
 body {
-    background-color: #f5f5f5;
+    background-color: #fff;
     margin: 0;
     font-style:bolder !important;
 }
@@ -192,10 +192,11 @@ input {
 }
 #nameplate
 {
-   padding-top: 10%;
+   padding-top: calc(10% + 160px);
     position: relative;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100% !important;
     
@@ -204,7 +205,7 @@ input {
 }
 .codelink
 {
-	z-index: 9999 !important;
+    z-index: 9999 !important;
 }
 .title
 {
@@ -498,6 +499,51 @@ aside h1 {
 {
     height: auto !important;
 }
+#bgimage
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/Untitled.jpg');
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-position: bottom;
+    background-size: cover;
+}
+.sideinfo
+{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    left: 0px;
+    background:rgba(255,255,255,0.7);
+    display: none;
+    color: #000;
+    padding-top: 50px;
+}
+.sideinfotitle
+{
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 18px;
+    overflow-x: hidden;
+    letter-spacing: 1px;
+    left: 100px;
+    position: relative;
+    white-space: -moz-nowrap; /* Firefox */
+white-space: -o-nowrap; /* Opera */
+white-space: nowrap; /* Chrome */
+
+}
+.sideinfocontent
+{
+    text-align: center;
+    line-height: 25px;
+}
 footer {
     position: fixed;
     z-index: 1000;
@@ -506,8 +552,8 @@ footer {
     right: 0;
     height: 2.25rem;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, .2);
-    background: #fff;
+    border-top: 1px solid #BF6B00;
+    background: #BF6B00;
     text-transform: uppercase;
     font-size: .75rem;
     color:#000;
@@ -524,7 +570,7 @@ footer {
     position: relative;
     display: block;
     background: #fff;
-    border: 2px solid #F26377;
+    border: 2px solid #CD8100;
     color: #000;
     font-size: 10px;
     letter-spacing: 0px;
@@ -537,17 +583,18 @@ footer {
 }
 .simhabtn:hover
 {
-    background: #F26377;
+    background: #CD8100;
     color: #fff;
 }
 .simha
 {
     background: url('../img/simha.png');
-    position: relative;
-    background-size: 160px 160px;
+    position: absolute;
+    background-size: contain;
     height: 160px;
     width: 160px;
-    
+    z-index: 99;
+    margin-top: 10%;
     left: calc(50% - 80px);
     vertical-align: middle;
     
@@ -569,11 +616,11 @@ footer p
 footer:hover
 {
     background: #fff;
-    color: #000 !important;
+    color: #ED2925 !important;
 }
 footer:hover p
 {
-	    -webkit-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -582,11 +629,11 @@ footer:hover p
 }
 footer:hover p a
 {
-	    -webkit-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-	color:#ED2925;
+    color:#ED2925;
 }
 .mode-light footer {
     background: 0 0;
@@ -605,7 +652,7 @@ footer div {
 }
 footer p a
 {
-	color:#ff0000;
+    color:#FFE42C;
 }
 footer div.secondary {
     width: 10%
@@ -707,18 +754,18 @@ footer div.featured {
 }
 
 @keyframes simhaeye {  
-  20% { background:url('../img/simhaclosed.png');background-size: 160px 160px; } 
-  40% { background:url('../img/simha.png');background-size: 160px 160px; }
+  20% { background:url('../img/simhaclosed.png');background-size: contain; } 
+  40% { background:url('../img/simha.png');background-size: contain; }
 }
 @-moz-keyframes simhaeye {  
-  20% { background:url('../img/simhaclosed.png');background-size: 160px 160px; } 
-  40% { background:url('../img/simha.png');background-size: 160px 160px; }
+  20% { background:url('../img/simhaclosed.png');background-size: contain; } 
+  40% { background:url('../img/simha.png');background-size: contain; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes simhaeye {  
-  20% { background:url('../img/simhaclosed.png');background-size: 160px 160px; } 
-  40% { background:url('../img/simha.png');background-size: 160px 160px; }
+  20% { background:url('../img/simhaclosed.png');background-size: contain; } 
+  40% { background:url('../img/simha.png');background-size: contain; }
 }
 
 /* Internet Explorer */
@@ -763,20 +810,19 @@ footer div.featured {
 {
     
     position: relative;
-    min-height:500px;
+     border-left: 3px solid #BF6B00;
     background: #322F2F;
     color: green !important;
-     width: 90%;
-    left: 5%;
+     width: calc(100% - 250px);
+    left: 250px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-      border: 30px solid #E7E1E1;
-      border-bottom: 70px solid #E7E1E1;
-       border-radius: 10px ;
+     
     overflow: hidden;
-    top: 100px;
-    height:calc(100% - 136px);
+    
+    height:calc(100% - 29px);
+    padding-bottom: 40px
 }
 .mainspon
 {
@@ -889,7 +935,7 @@ footer div.featured {
     font-size: .875rem;
     line-height: 1.6;
     letter-spacing: 1px;
-    color: #A5EC49;
+    color: #FEAF00;
     text-align: left;
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -1182,7 +1228,7 @@ background:#F83D25;
     margin-right: 20px;
     
     position: relative;
-    height: auto;
+    height: calc(100% - 29px);
     background: #000;
     width: 100%;
 
@@ -1203,6 +1249,7 @@ background:#F83D25;
   #primary
     {
         text-align: left;
+
     }
 .apple
 {
@@ -1225,7 +1272,7 @@ background:#F83D25;
 {
     width:100%;
     position: relative;
-    height: auto;
+    height: calc(100% - 29px);
     background: #000;
     color: green !important;
     left: 0%;
@@ -1237,6 +1284,7 @@ background:#F83D25;
     overflow: hidden;
     top:0;
  padding-bottom: 40px;
+ z-index: 1000;
 }
   #primary
     {
@@ -1263,7 +1311,7 @@ background:#F83D25;
 {
     width:100%;
     position: relative;
-    height: auto;
+    height: calc(100% - 29px);
     background: #000;
     color: green !important;
     left: 0%;
@@ -1275,6 +1323,7 @@ background:#F83D25;
     overflow: hidden;
     top:0;
  padding-bottom: 40px;
+ z-index: 1000;
 }
   #primary
     {
@@ -1305,7 +1354,7 @@ background:#F83D25;
 {
     width:100%;
     position: relative;
-    height: auto;
+    height: calc(100% - 29px);
     background: #000;
     color: green !important;
     left: 0%;
@@ -1317,6 +1366,7 @@ background:#F83D25;
     overflow: hidden;
 top:0;
  padding-bottom: 40px;
+ z-index: 1000;
 }
 .apple
 {
@@ -1347,7 +1397,8 @@ top:0;
     margin-right: 20px;
     
     position: relative;
-    height: auto;
+     height:calc(100% - 25px);
+     z-index: 1000;
     background: #000;
     width: 100%;
 
@@ -1363,7 +1414,7 @@ top:0;
 
     overflow: hidden;
     padding-bottom: 40px;
-
+    
 }
   #primary
     {
@@ -1390,8 +1441,10 @@ top:0;
 {
     width:100%;
     position: relative;
-    height: auto;
+    
     background: #000;
+    height:calc(100% - 25px);
+     z-index: 1000;
     color: green !important;
     left: 0%;
     box-sizing: border-box;
@@ -1401,7 +1454,8 @@ top:0;
       border-bottom: 0px solid #E7E1E1;
     overflow: hidden;
     top:0;
- padding-bottom: 40px;
+    padding-bottom: 40px;
+ 
 }
   #primary
     {
@@ -1428,7 +1482,7 @@ top:0;
 {
     width:100%;
     position: relative;
-    height: auto;
+    
     background: #000;
     color: green !important;
     left: 0%;
@@ -1439,7 +1493,9 @@ top:0;
       border-bottom: 0px solid #E7E1E1;
     overflow: hidden;
     top:0;
+ height:calc(100% - 25px);
  padding-bottom: 40px;
+     z-index: 1000;
 }
   #primary
     {
@@ -1470,7 +1526,7 @@ top:0;
 {
     width:100%;
     position: relative;
-    height: auto;
+    height: calc(100% - 25px);
     background: #000;
     color: green !important;
     left: 0%;
@@ -1482,6 +1538,7 @@ top:0;
     overflow: hidden;
 top:0;
  padding-bottom: 40px;
+ z-index: 1000;
 }
 .apple
 {

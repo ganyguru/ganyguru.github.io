@@ -11,18 +11,18 @@ var c;
 var regnum=0;
 name="";
 var commands={	
-"help":"<br>help - To get help commands<br>date - To get event date<br>location - To get venue of the event<br>map - To get map of the location<br>fee - To get registration fees<br>rules - To get basic rules<br>register - To register<br>perks - Prize money and other offers<br>contact - Details to contact us<br>sponsor - To get sponsor details<br><br>",
-"date":"<br>Date : 12th to 13th December 2015<br><br>",
-"location":"<br>Location : IFIM Business School, Bangalore<br><br>",
-"fee":"<br>Registration Fees : Rs.300 per person<br><br>",
-"rules":"Maximum 3 participants per team",
-"map":"<br>Opening Google maps to show location<br><br>",
-"register":"<br>Moving to register section<br><br>",
-"sponsor":"<br>Check out our sponsors<br><br>",
-"perks":"<br>*Prize Money worth Rs.1 lakh<br>*Internship opportunities for top participants<br><br>",
-"contact":"<br>Shrimithran shrimithran@pragyan.org +91 91766 53503<br>Naman naman@pragyan.org +91 98845 79108<br>",
-"manix":"<br>God Level _/\\_<br><br>",
-"gany":"<br>Paramasivan _/\\_<br><br>"
+"help":"<br>help - To get help commands<br>date - To get current date<br>qual - To get my qualification details<br>about - About me!<br>skills - Check out my Skillzz<br>contact - Hey, How you doing?<br>fb - Stalk me in fb!<br>linkedin - Check out me as a professional<br>github - Care to look?<br><br>",
+"date":"<br>"+updateTime()+"<br><br>",
+"qual":"<br>B.Tech (Chemical Engineering), NIT Trichy, India<br><br>",
+"about":"<br>21-year old front-end web developer who is also a great(ahem..ahem) Chemical Engineer. Graduated from one of pioneer institution and got placed in GAIL but coding still loves me &hearts;<br><br>",
+"skills":"<br>HTML,CSS,JS - ##########<br>PHP,C++ - #######<br>VB.Net - #####<br>Designing - ####<br>Chemical Engineering - Maximum call stack exceeded<br><br>",
+"contact":"<br>cprganesh@gmail.com<br>+91 9790892234<br><br>",
+"fb":"<br>Stalk right away!<br><br>",
+"linkedin":"<br>Yes, I am a professional<br><br>",
+"github":"<br>Meh, huge volume of css and js<br><br>",
+"gany":"<br>Simha _/\\_<br><br>",
+"sandi":"<br>Zaga Zaga <span style='color:red;'>&hearts;</span><br><br>",
+"sara":"<br>Chulbuli <span style='color:red;'>&hearts;</span><br><br>"
 };
 var option='n';
 function formvalidate()
@@ -83,7 +83,7 @@ $("span").removeClass('blink');
  if(register==0)
  {
 
- var entry='<div class="introForm-entry" id="entry'+c+'"><div class="introForm-question visible" id="question'+c+'"><div class="introForm-line" ><div class="input-wrapper"><table><tr><td>'+name+'@pragyan.org:~$</td><td><input type="text" class="visible butt" id="text'+c+'" onkeyup="general(event)" style="color:#322F2F;" ><div id="faketext'+c+'" onclick="$(\'#text'+c+'\').focus();" class="faketext"> <span class="blink">&block;</span></div> </td></tr></table></div></div></div></div>';
+ var entry='<div class="introForm-entry" id="entry'+c+'"><div class="introForm-question visible" id="question'+c+'"><div class="introForm-line" ><div class="input-wrapper"><table><tr><td>'+name+'@gany.guru:~$</td><td><input type="text" class="visible butt" id="text'+c+'" onkeyup="general(event)" style="color:#322F2F;" ><div id="faketext'+c+'" onclick="$(\'#text'+c+'\').focus();" class="faketext"> <span class="blink">&block;</span></div> </td></tr></table></div></div></div></div>';
  
  if(detail==5)
  {
@@ -167,7 +167,6 @@ $("span").removeClass('blink');
 if(state==0)
 $("#answer"+String(c)).append(entry);
 else
-
 $("#question"+String(c)).append(entry);
 }
 else
@@ -186,9 +185,19 @@ else
 });
 }
 
-if(text=="map")
+if(text=="fb")
 {
-	window.open("https://goo.gl/maps/tqKwDChnK1C2");
+	window.open("https://facebook.com/GaneGuru");
+}
+else
+if(text=="github")
+{
+	window.open("https://github.com/ganyguru");
+}
+else
+if(text=="linkedin")
+{
+	window.open("https://www.linkedin.com/in/ganyguru/");
 }
 if(text=="sponsor")
 {
@@ -224,7 +233,7 @@ function answer(i)
 			string='<div class="introForm-line" ><button type="button" class="butt opt" onclick="increase()"><span >Yes</span></button><button type="button" class="butt opt" onclick="last()"><span >No</span></button></div>';
 		break;
 		case 3:
-			string='<div class="introForm-line" ><div class="input-wrapper"><table><tr><td>'+name+'@pragyan.org:~$</td><td><input type="text" class="visible butt" id="gitname" onkeyup="c='+i+';keytype2(event)" style="color:#322F2F;" ><div id="faketext2" onclick="$(\'#gitname\').focus();"> <span class="blink">&block;</span></div> </td></tr></table></div></div>';
+			string='<div class="introForm-line" ><div class="input-wrapper"><table><tr><td>'+name+'@gany.guru:~$</td><td><input type="text" class="visible butt" id="gitname" onkeyup="c='+i+';keytype2(event)" style="color:#322F2F;" ><div id="faketext2" onclick="$(\'#gitname\').focus();"> <span class="blink">&block;</span></div> </td></tr></table></div></div>';
 		break;
 		case 4:
 			string='<div class="introForm-line" ><button type="button" class="butt" onclick="back('+i+')"><span >Back</span></button></div>';
@@ -328,12 +337,23 @@ function updateTime() {
             seconds = "0" + seconds;
         }
         var v = hours + ":" + minutes + ":" + seconds + ":" + millis;
+        var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+
+var yyyy = today.getFullYear();
+if(dd<10){
+    dd='0'+dd;
+} 
+if(mm<10){
+    mm='0'+mm;
+} 
+var today = dd+'/'+mm+'/'+yyyy;
         
-        setTimeout("updateTime()",1);
-        document.getElementById('time').innerHTML=v;
+        return today+" "+v;
     }
-   if(!ntime)
- updateTime();
+ //   if(!ntime)
+ // updateTime();
  $(document).ready( function() {
  	if(!ntime)
    document.getElementById('ip').innerHTML=userip;
