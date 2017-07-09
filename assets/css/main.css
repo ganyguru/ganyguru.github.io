@@ -815,6 +815,7 @@ footer div.featured {
     color: green !important;
      width: calc(100% - 250px);
     left: 250px;
+    
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1224,8 +1225,7 @@ background:#F83D25;
     }
    .monitor
 {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0;
     
     position: relative;
     height: calc(100% - 29px);
@@ -1272,6 +1272,7 @@ background:#F83D25;
 {
     width:100%;
     position: relative;
+    margin: 0;
     height: calc(100% - 29px);
     background: #000;
     color: green !important;
@@ -1313,6 +1314,7 @@ background:#F83D25;
     position: relative;
     height: calc(100% - 29px);
     background: #000;
+    margin: 0;
     color: green !important;
     left: 0%;
     box-sizing: border-box;
@@ -1356,6 +1358,7 @@ background:#F83D25;
     position: relative;
     height: calc(100% - 29px);
     background: #000;
+    margin: 0;
     color: green !important;
     left: 0%;
     box-sizing: border-box;
@@ -1393,9 +1396,7 @@ top:0;
     }
    .monitor
 {
-    margin-left: 20px;
-    margin-right: 20px;
-    
+    margin: 0;
     position: relative;
      height:calc(100% - 25px);
      z-index: 1000;
@@ -1441,7 +1442,7 @@ top:0;
 {
     width:100%;
     position: relative;
-    
+    margin: 0;
     background: #000;
     height:calc(100% - 25px);
      z-index: 1000;
@@ -1482,7 +1483,7 @@ top:0;
 {
     width:100%;
     position: relative;
-    
+    margin: 0;
     background: #000;
     color: green !important;
     left: 0%;
@@ -1528,6 +1529,7 @@ top:0;
     position: relative;
     height: calc(100% - 25px);
     background: #000;
+    margin: 0;
     color: green !important;
     left: 0%;
     box-sizing: border-box;
