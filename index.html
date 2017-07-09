@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+
 <head>
-	<meta charset="UTF-8">
+
+    <meta charset="UTF-8">
     <title>Ganesh Raghavendran | @ganyguru</title>
 
-    <style type="text/css">
-    	.under
-    	{
-    		
-    		left: 0;
-    		top:0;
-    		width: 100%;
-    		height: 100%;
-    		background: #2b2b2b url('newbg.jpg') no-repeat center center fixed; -webkit-background-size: contain;  -moz-background-size: contain;  -o-background-size: contain;  background-size: contain;min-height: 100%;min-width:100%;position:absolute;
-    	}
-    </style>
+
   
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,8 +28,370 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script type="text/javascript">
+    var ntime=0;
+var userip="127.0.0.1";
+  var ajaxload=0;
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-19500581-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </head>
-<body style="background: #2b2b2b">
-<div class="under" ></div>
+<body onload=" $('#name1').focus();">
+<div id="sponblock" style="display:none"></div>
+
+
+
+<div id="sponsors" style="display:none">
+  <div id="close"></div>
+  <div class="mainspon">
+    <h2>Sponsors</h2>
+    <a href="https://microsoft.com"><img class="white" src="assets/img/sponsors/microsoft.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/datawind.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/ubislate.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/pocketsurfer.png" /></a>
+  </div>
+
+ <div class="largespon">
+    <h2>Platinum Partners</h2>
+    <a ><img class="white" src="assets/img/sponsors/exotel.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/navrithi.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/hackerearth.png" /></a>
+  </div>
+
+ <div class="largespon">
+    <h2>Associate Partners</h2>
+    <a ><img class="white" src="assets/img/sponsors/startup curation.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/codechef.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/knolskape.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/hackerrank-logo.png" /></a>
+  </div>
+
+  <div class="mainspon">
+    <h2>Venue Partner</h2>
+    <a ><img class="white" src="assets/img/sponsors/ifim.png" /></a>
+  </div>
+
+ <div class="largespon">
+    <h2>Online Media Partners</h2>
+    <a ><img class="white" src="assets/img/sponsors/btechfriend_logo.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/btechjosh-logo.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/careers360_logo.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/d2c-logo.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/festsinfo-final-logo.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/freshersworld-logo.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/knowafest-logo.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/logo-indiacollegefest.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/pricebaba_logo.png" /></a>
+    <a ><img class="white" src="assets/img/sponsors/Twenty-19.png" /></a>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="main">
+      <div id="block">
+      <img src="assets/img/loader.gif" class="loader">
+      </div>
+       
+        <div id="root" class="mode-dark mode-intro" style="display:none;">
+      <aside id="meta" class="appear-metabox" style="display:none;">
+         <h1 >PRAGYAN HACKATHON</h1>
+         <ul class="dataBox sessionBox">
+            
+            <li class="dataBox-row" >
+               <div class="dataBox-cell">IP:</div>
+               <div class="dataBox-cell" id="ip">Your IP</div>
+            </li>
+            <li class="dataBox-row" >
+               <div class="dataBox-cell">Time:</div>
+               <div id="time">IFIM Buisness School</div>
+            </li>
+             <li class="dataBox-row" >
+               <div class="dataBox-cell">Time:</div>
+               <div id="time">IFIM Buisness School</div>
+            </li>
+            <li class="dataBox-row" >
+               <div class="dataBox-cell">Prize Money:</div>
+               <div id="time">1 Lakh</div>
+            </li>
+            <li class="dataBox-row" >
+               <div class="dataBox-cell">Registration Fees:</div>
+               <div id="time">Rs.300</div>
+            </li>
+           
+         </ul>
+
+
+         
+      </aside>
+      <div class="invisible" ></div>
+      <div id="primary" >
+ <div id="nameplate" class="introFormWrapper green">
+     
+<div class="simha simhablink"></div><br>
+<center><div style="position: relative;color:black">Ganesh Raghavendran</div>
+<a href="coming_soon.html"><div class="simhabtn ease">Hack your way through</div></a>
+<a href="coming_soon.html"><div class="simhabtn ease">Nah! I am good</div></a>
+
+
+</center>
+      </div></center>
+     
+         <div class="introFormWrapper monitor" style="display:none;" id="display">
+            <div class="introForm" style="transform: translate(0px, -84.3px); -webkit-transform: translate(0px, -84.3px);" id="form">
+               
+               <div class="introForm-entry" id="entry1">
+                  <div class="introForm-question visible" id="question1">
+                   
+                     <div class="introForm-line">Hello. Welcome to Pragyan Hackathon.</div>
+                     <div class="introForm-line" >What’s your name?</div>
+                  </div>
+                  <div class="introForm-answer visible" id="answer1">
+            
+                     <div class="introForm-line" >
+                        <div class="input-wrapper"><input type="text" class="visible butt" id="name1" onkeyup="keytype(event)" style="color:#322F2F;"  >
+                        <div id="faketext1" onclick="$('#name1').focus();">
+                          <span class="blink" id="b1">&block;</span>
+                        </div>
+                        </div>
+                        <button type="button" class="butt pink" onclick="count++;increase(); " id="namebut" style="visibility:hidden;" ><span >Submit</span></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+              
+         </div>
+    
+      </div>
+     <input type="hidden" name="rname" id="rname"/>
+     <input type="hidden" name="mail" id="mail"/>
+     <input type="hidden" name="contact" id="contact"/>
+
+
+       <script type="text/javascript">
+       
+      </script>
+      <footer class="appear-footer" data-reactid=".0.3">
+        <center><p style="line-height:36px;">Made with lots of <span style="color:red">&hearts;</span> by <a href="http://delta.nitt.edu" target="_blank">ganyguru</a></p></center>
+      </footer>
+   </div>
+
+    </div>
+<div class="apple" style="display:none;"></div>
+    <script src="assets/js/jquery.min.js"></script>
+   <!-- <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script> -->
+    <script src="assets/js/script.js"></script>
+        <script src="assets/js/typed.js"></script>
+  <script type="text/javascript">
+
+
+
+$("#sponsors").height($(document).height());
+$("#sponblock").height($(document).height());
+$("#close").bind("click touchstart",function()
+{
+$("#sponsors").hide();
+$("#sponblock").hide();
+$("#text"+c).focus();
+});
+
+$('.monitor').bind("click touchstart",function() { 
+  if(count==1)
+    $("#name1").focus();
+  else if(count==3 && c!=4)
+    $("#gitname").focus();
+  else
+    $("#text"+c).focus();
+    //  Add items to the cart here
+});
+
+document.addEventListener("keydown", escapebutton, false);
+function escapebutton(e) {
+var keyCode = e.keyCode;
+  if(keyCode==27) {
+  $("#sponsors").hide();
+$("#sponblock").hide();
+        event.preventDefault();
+  }
+  if(keyCode==9)
+  {
+    event.preventDefault();
+  }
+}
+
+
+
+
+
+
+function keytype(event)
+  {
+
+    if(event.keyCode == 13){
+            $("span").removeClass('blink');
+        $("#namebut").click();
+
+    }
+    else
+      if(event.keyCode==37 || event.keyCode==39)
+        event.preventDefault();
+    if(event.keyCode != 13)
+    document.getElementById("faketext1").innerHTML=$("#name1").val()+'<span class="blink">&block;</span>';
+  }
+
+  function keytype2(event)
+   {
+     if(event.keyCode == 13){
+      $("span").removeClass('blink');
+        addline(0);
+    } else
+      if(event.keyCode==37 || event.keyCode==39)
+        {
+          
+          $("#gitname").val($("#gitname").val());
+        event.preventDefault();
+      return false;}   
+
+
+
+      else if(event.keyCode==9)
+      {
+        event.preventDefault();
+       
+        var commandArray=Object.keys(commands);
+       
+        var index, value, result;
+      for (index = 0; index < commandArray.length; ++index) {
+       value = commandArray[index];
+        if (value.indexOf($("#gitname").val()) == 0) {
+     
+        $("#gitname").val(value);
+        document.getElementById("faketext2").innerHTML=$("#gitname").val()+'<span class="blink">&block;</span>'
+        break;
+    }
+}
+
+return false;
+      }
+
+
+
+
+       if(event.keyCode != 13)
+
+    document.getElementById("faketext2").innerHTML=$("#gitname").val()+'<span class="blink">&block;</span>';
+   }
+
+
+
+
+   function general(event)
+   {
+   
+    if(event.keyCode==37 || event.keyCode==39)
+        {
+        $("#text"+c).val($("#text"+c).val());
+        event.preventDefault();
+      return false;}
+       else if(event.keyCode==9 && register!=1)
+      {
+        event.preventDefault();
+       // alert('hi');
+        var commandArray=Object.keys(commands);
+        
+        var index, value, result;
+      for (index = 0; index < commandArray.length; ++index) {
+       value = commandArray[index];
+        if (value.indexOf($("#text"+c).val()) == 0) {
+     
+        $("#text"+c).val(value);
+        document.getElementById("faketext"+c).innerHTML=$("#text"+c).val()+'<span class="blink">&block;</span>';
+        break;
+    }
+  }}
+        else if(event.keyCode == 13){
+      if(register==1)
+    {
+        if(detail==1)
+        {
+        $("#rname").val($("#text"+c).val());
+        detail++;
+      }
+        else if(detail==2)
+        {
+        $("#mail").val($("#text"+c).val());
+        detail++;
+      }
+        else if(detail==3)
+        {
+        $("#contact").val($("#text"+c).val());
+        detail++;
+      }
+        else  if(detail==4)
+        {
+          option=$("#text"+c).val();
+          if(option=='y' || option=='Y')
+        {
+
+          if(formvalidate())
+          {
+           $("#block").show();
+           $("#root").hide();
+           $(".apple").hide();
+           ajaxReq();
+          }
+         
+        }
+        
+          detail++;
+          height+=170;
+          $('#form').css({
+  '-webkit-transform' : 'translate(0px,-' + (height) + 'px)',
+ 
+  'transform'         : 'translate(0px,-' + (height) + 'px)'
+});
+        }      
+    }
+
+        addline(1);
+    }
+      
+    
+    document.getElementById("faketext"+c).innerHTML=$("#text"+c).val()+'<span class="blink">&block;</span>';
+
+
+
+   }
+
+
+
+
+
+
+ 
+  </script>
+
+     
 </body>
+
+
 </html>
