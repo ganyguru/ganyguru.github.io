@@ -25,48 +25,7 @@ var commands={
 "sara":"<br>Chulbuli <span style='color:red;'>&hearts;</span><br><br>"
 };
 var option='n';
-function formvalidate()
-{
-	var ferr=1;
-	var charRegExp = /^[a-zA-Z .]+$/;
-	if($("#rname").val()=="" || $("#rname").val().search(charRegExp)!=0 )
-		ferr=0;
-	if($("#mail").val()=="" || (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($("#mail").val() )) ))
-		ferr=0;
-	if($("#contact").val()=="" || isNaN($("#contact").val()))
-		ferr=0;
 
-
-	if(ferr==0)
-	{
-		var entry='<div class="introForm-line" ><div class="input-wrapper" style="color:#fff;"> <div class="input-wrapper">Invalid Input. Try Again!</div> </div></div>';	
-		if(regnum==3)
-	$("#answer"+String(regnum)).append(entry);
-	else
-	$("#question"+String(regnum)).append(entry);
-
-	}
-	return ferr;
-}
-function ajaxReq()
-{
-	var req_name=$("#rname").val();
-	var req_mail=$("#mail").val();
-	var req_mobile=$("#contact").val();
-
-
-$.post("pay.php",
-    {
-       name: req_name, email: req_mail, phone:req_mobile
-    },
-    function(data){
-        var res;
-        data=JSON.stringify(data);
-        res=JSON.parse(data);
-        window.location.href=String(res.pgUrl);
-    });
-
-}
 function addline(state)
 {
 
@@ -355,8 +314,8 @@ var today = dd+'/'+mm+'/'+yyyy;
  //   if(!ntime)
  // updateTime();
  $(document).ready( function() {
- 	if(!ntime)
-   document.getElementById('ip').innerHTML=userip;
+ 	// if(!ntime)
+  //  document.getElementById('ip').innerHTML=userip;
 if(!ajaxload)
 {
    $("#block").fadeOut();
