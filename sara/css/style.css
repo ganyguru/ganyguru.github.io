@@ -1,0 +1,216 @@
+.wrapper
+{
+  margin: 0;
+  padding: 0;
+  left: 0;
+  min-width:100%;
+  background: url(../img/bglight.jpg);
+
+  background-repeat: repeat;
+  top: 0;
+  min-height: 100%;
+  position: absolute;
+}
+.topbar
+{
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.sbtn
+{
+  position: relative;
+  width: 100%;
+  border: 4px solid #000;
+  background: #fff;
+  height: 50px;
+  display: block;
+
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000;
+}
+.sbtn:hover
+{
+  background: #000;
+  color: #fff;
+}
+.sbtn i
+{
+  font-size: 35px;
+  line-height: 42px;
+}
+.ease
+{
+  -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+
+}
+.mainfooter
+{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.mainlogo
+{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+
+  background: url(../img/logo.png);
+    background-size: 200px 200px;
+}
+.logokolam
+{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url(../img/kolam.png);
+  background-size: 300px 300px;
+}
+.logofull
+{
+  width: 300px;
+  height: 300px;
+  position: relative;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+}
+.corner
+{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background: url(../img/corner.png);
+  background-size: 150px 150px;
+}
+.ul
+{
+    left: 0;
+    top: 0;
+}
+.ur
+{
+  right: 0;
+  top: 0;
+  transform: scaleX(-1);
+}
+.dl
+{
+  left: 0;
+  bottom: 0;
+  transform: rotate(270deg);
+}
+.dr
+{
+  right: 0;
+  bottom: 0;
+
+  transform: scaleX(-1);
+  transform: rotate(180deg);
+}
+.homeholder
+{
+  position: absolute;
+  width: 300px;
+  left: 0;
+  height: 100%;
+
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+        .trapicons {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    top: 50%;
+    margin-top: -75px;
+    left: 0;
+}
+
+.trapicon {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background: #fff;
+    border: 3px solid #2A0805;
+    left: -110px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.trapicon span {
+    color: #2A0805;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 15px;
+    line-height: 37px;
+}
+
+.trapicon img {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.trapicon:hover
+{
+  left: -3px;
+}
+
+.side1
+{
+  margin-top: 0;
+}
+.side2
+{
+  margin-top: 50px;
+}
+.side3
+{
+  margin-top: 100px;
+}
+.rotate {
+    -webkit-animation: spin 90s linear infinite;
+    -moz-animation: spin 90s linear infinite;
+    animation: spin 90s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
