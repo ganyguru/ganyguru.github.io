@@ -86,7 +86,7 @@ var userip="127.0.0.1";
 <br>
 <center><div style="position: relative;color:black">Ganesh Raghavendran</div>
 <div class="simhabtn ease" onclick="reveal()">Hack your way through</div>
-<a href="coming_soon.html"><div class="simhabtn ease">Nah! I am good</div></a>
+<a href="assets/Ganesh_Raghavendran_Resume_2018.pdf" target="_blank"><div class="simhabtn ease">Make it easy!</div></a>
 
 
 </center>
@@ -95,8 +95,7 @@ var userip="127.0.0.1";
 
      	 	<div class="sideinfotitle">Hey, Hacker</div><br><br>
      	 	<div class="sideinfocontent">Check out the below quicklinks<br><br>
-     	 	<center><a href="coming_soon.html"><div class="simhabtn ease">My Portfolio</div></a>
-     	 	<a href="coming_soon.html"><div class="simhabtn ease">Download Résumé</div></a></center>
+     	 	<center><a href="assets/Ganesh_Raghavendran_Resume_2018.pdf" target="_blank"><div class="simhabtn ease">Download Résumé</div></a></center>
 
 
 
@@ -330,6 +329,7 @@ return false;
 function reveal()
 {
  $("#nameplate").fadeOut();
+ $(".LI-profile-badge").hide();
  $(".simha").animate({"left": "10px", "height": "100px", "width": "100px", "margin-top": "50px"},1000,"swing",function()
  {
  $("#display").fadeIn();
