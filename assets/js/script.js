@@ -23,7 +23,7 @@ var commands = {
     "gany": "<br>Simha _/\\_<br><br>",
     "sandi": "Zaga Zaga <span style='background:url(assets/img/giphy.gif);width:20px;height:20px;background-size:cover;position:relative;display:inline-block'></span><br>",
     "sara": "<br>Chulbuli <span style='color:red;'>&hearts;</span><br><br>",
-  	"resume":"<br>Please take a look, sir!<br><br>"
+  	"resume":"<br>Dig in!<br><br>"
 };
 var option = 'n';
 
