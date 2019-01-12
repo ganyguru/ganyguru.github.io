@@ -445,25 +445,7 @@ I worked on web applications for Treemap view of equipments, KPIs (Meter gauge v
     </script>
 
     <script type="text/javascript" src="assets/js/0a8c8.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script>
-    var favicon_images = [
 
-                    'assets/images/fav1.png',
-                    'assets/images/fav2.png'
-                ],
-    image_counter = 0; // To keep track of the current image
-
-setInterval(function() {
-    $("link[rel='icon']").remove();
-    $("link[rel='shortcut icon']").remove();
-    $("head").append('<link rel="icon" href="' + favicon_images[image_counter] + '" type="image/png"> <link rel="shortcut icon" href="' + favicon_images[image_counter] + '" type="image/png">');
-	if(image_counter == 1)
-        image_counter = 0;
-    else
-        image_counter = 1;
-}, 20);
-    </script>
 </body>
 
 </html>
