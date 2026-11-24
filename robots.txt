@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /assets/
+Disallow: /assets/Ganesh_Raghavendran.pdf
+Sitemap: https://cprganesh.com/sitemap.xml
