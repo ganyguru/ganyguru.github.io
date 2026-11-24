@@ -37,10 +37,19 @@ h1 span{color:var(--accent)}
 .button,.text-link{display:inline-flex;align-items:center;gap:.55rem;min-height:44px;font-size:.89rem;font-weight:700;text-decoration:none}
 .button{padding:.68rem 1rem;border-radius:5px;background:var(--ink);color:white;transition:background-color .18s ease}
 .button:hover{background:#463969}
-.specimen{margin:0;overflow:hidden;border:1px solid #d8d2e3;border-radius:7px;background:var(--tint)}
-.specimen svg{width:100%;height:auto}
-.specimen figcaption{padding:.7rem .85rem;display:flex;flex-wrap:wrap;gap:.25rem .65rem;justify-content:space-between;border-top:1px solid #d8d2e3;font:600 .65rem/1.45 var(--mono);letter-spacing:.07em;color:var(--dim)}
-.specimen figcaption span:first-child{color:var(--accent)}
+.specimen{margin:0;overflow:hidden;border:1px solid #d8d2e3;border-radius:8px;background:var(--paper)}
+.specimen figcaption{padding:.76rem .94rem;display:flex;align-items:center;flex-wrap:wrap;gap:.28rem .76rem;background:var(--tint);border-bottom:1px solid #d8d2e3;color:var(--ink);font-size:.84rem;font-weight:700}
+.specimen figcaption span:first-child{color:var(--accent);font:650 .74rem/1.4 var(--mono);letter-spacing:.08em}
+.capabilities{margin:0;padding:0;list-style:none}
+.capability{display:grid;grid-template-columns:clamp(3.85rem,7.3vw,6rem) minmax(0,1fr);gap:.7rem;align-items:center;padding:.75rem .94rem}
+.capability+.capability{border-top:1px solid var(--line)}
+.capability svg{width:100%;height:auto;fill:none;stroke:#65539f;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.diagram-faint{stroke:#b1a5d2;stroke-width:1}
+.diagram-fill{fill:#eee9fa}
+.capability-index{font:650 .67rem/1.35 var(--mono);letter-spacing:.03em;color:var(--accent)}
+.capability h2{font:650 1rem/1.25 var(--sans);letter-spacing:-.02em;margin:.25rem 0 .22rem}
+.capability h2+p{font-size:.82rem;line-height:1.35;color:var(--body)}
+.figure-note{padding:.58rem .94rem;border-top:1px solid var(--line);font-size:.72rem;line-height:1.4;color:var(--dim)}
 .section{border-top:1px solid var(--line);padding-block:clamp(3rem,7vw,5.3rem)}
 .section-head{max-width:40rem}
 .kicker{color:var(--accent);margin-bottom:.66rem}
@@ -95,7 +104,6 @@ h2{font-size:clamp(2.4rem,5.2vw,4.45rem)}
   .hero{grid-template-columns:minmax(0,1fr);gap:2rem;padding-block:clamp(2.65rem,7vw,4.65rem)}
   h1{font-size:clamp(3rem,9vw,6rem)}
   .specimen{width:min(100%,530px)}
-  .specimen svg{aspect-ratio:400/296}
 }
 @media(max-width:610px){
   .wrap{width:calc(100% - 2rem)}
