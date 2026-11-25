@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <defs><radialGradient id="a"><stop stop-color="#ca8dfd" stop-opacity=".65"/><stop offset="1" stop-color="#9cc5fa" stop-opacity="0"/></radialGradient></defs>
+  <style>
+    .mage{transform-box:fill-box;transform-origin:50% 75%}
+    .halo,.mage,.atoms{animation:none}
+    @media(prefers-reduced-motion:no-preference){.mage,.atoms{animation:lift 4.5s ease-in-out infinite}.halo{animation:aura 4.5s ease-in-out infinite}}
+    @keyframes lift{0%,100%{transform:translateY(2px)}50%{transform:translateY(-6px)}}
+    @keyframes aura{0%,100%{opacity:.62}50%{opacity:1}}
+  </style>
+  <ellipse class="halo" cx="150" cy="110" rx="107" ry="87" fill="url(#a)"/>
+  <g fill="none" stroke="#748de7" stroke-opacity=".45">
+    <ellipse cx="150" cy="173" rx="64" ry="12"/><ellipse cx="150" cy="173" rx="40" ry="7"/><path d="M82 173h-8m152 0h-8"/>
+  </g>
+  <g class="atoms" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <g transform="translate(102 48)" stroke="#5b84d7"><ellipse rx="18" ry="7" transform="rotate(0)"/><ellipse rx="18" ry="7" transform="rotate(60)"/><ellipse rx="18" ry="7" transform="rotate(-60)"/><circle r="2.1" fill="#ecca47"/><circle cx="15" cy="-4" r="2.1" fill="#dcefff"/></g>
+    <g transform="translate(150 36)" stroke="#a963e0"><ellipse rx="21" ry="8"/><ellipse rx="21" ry="8" transform="rotate(60)"/><ellipse rx="21" ry="8" transform="rotate(-60)"/><circle r="3" fill="#ecca47"/><circle cx="-19" cy="-3" r="2.3" fill="#f6e3ff"/></g>
+    <g transform="translate(198 48)" stroke="#4b9cad"><ellipse rx="18" ry="7"/><ellipse rx="18" ry="7" transform="rotate(60)"/><ellipse rx="18" ry="7" transform="rotate(-60)"/><circle r="2.1" fill="#ecca47"/><circle cx="15" cy="4" r="2.1" fill="#ddfff7"/></g>
+  </g>
+  <g class="mage" stroke="#3b3157" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M100 132q-14-9-13-21 10 1 18 13 13-12 26-11l8 23-25 13Z" fill="#efbb35"/>
+    <path d="M200 132q14-9 13-21-10 1-18 13-13-12-26-11l-8 23 25 13Z" fill="#efbb35"/>
+    <path d="M131 122h38l15 31-15 15h-38l-15-15Z" fill="#945242"/>
+    <path d="M119 147q-15-2-21 10 4 13 25 12l24-7-6-10Z" fill="#ffcf46"/>
+    <path d="M181 147q15-2 21 10-4 13-25 12l-24-7 6-10Z" fill="#ffcf46"/>
+    <path d="M125 96 112 66q-1-7 5-3l27 17h12l27-17q6-4 5 3l-13 30 5 12-14 18h-32l-14-18Z" fill="#f6c13b"/>
+    <path d="m125 81 9 7-10 2m51-9-9 7 10 2" fill="#895047"/>
+    <path d="m143 94 7-7 7 7-7 12Z" fill="#ab66dd"/>
+    <path d="m128 102 13 3m31-3-13 3" stroke-width="3"/>
+    <path d="M145 112q-12 2-21-2-5 10-15 11 9 10 23 4 1 19 18 35 17-16 18-35 14 6 23-4-10-1-15-11-9 4-21 2l-5-5Z" fill="#fff5db"/>
+    <path d="M150 125v25m-8-22 5 20m11-20-5 20" stroke="#bd9b91" stroke-width="1.2"/>
+  </g>
+  <g stroke="#9d75d8" stroke-linecap="round" opacity=".8"><path d="M64 86v10m-5-5h10m162 6v9m-4.5-4.5h9m-155 37v7m-3.5-3.5h7"/></g>
+</svg>
