@@ -2,7 +2,7 @@
   const root = document.documentElement;
   const themeKey = 'portfolio-theme';
   const paletteKey = 'portfolio-palette';
-  const colors = {copper:['#f6f1e7','#1c1c18'],maroon:['#f4efe8','#261b20'],rose:['#f3eee9','#2a1e31']};
+  const colors = {copper:['#f6f1e7','#1c1c18'],maroon:['#f4efe8','#261b20'],trainer:['#fff8e8','#171f35']};
   const device = matchMedia('(prefers-color-scheme: dark)');
   const read = key => {
     try { return localStorage.getItem(key); } catch { return null; }
@@ -44,10 +44,17 @@
       sync();
     });
     label.querySelectorAll('[data-palette-choice]').forEach(item => item.addEventListener('click', () => {
+      const started = root.dataset.palette;
+      delete root.dataset.capTurn;
       setPalette(item.dataset.paletteChoice);
+      if (started !== 'trainer' && root.dataset.palette === 'trainer' &&
+          !matchMedia('(prefers-reduced-motion: reduce)').matches) root.dataset.capTurn = '';
       write(paletteKey, root.dataset.palette);
       sync();
     }));
+    document.querySelector('.brand-rotor')?.addEventListener('animationend', event => {
+      if (event.animationName === 'cap-turn') delete root.dataset.capTurn;
+    });
     device.addEventListener?.('change', sync);
     sync();
     button.hidden = false;
