@@ -200,6 +200,16 @@ h2{font-size:clamp(2.4rem,5.2vw,4.45rem)}
 .resume article+article{margin-top:1rem}
 .resume ul{padding-left:1.25rem}
 .resume li+li{margin-top:.45rem}
+.resume-intro-scene{display:grid;grid-template-columns:minmax(0,1fr) minmax(11rem,17.5rem);align-items:center;gap:1rem}
+.resume-lifter{margin:0}
+@media(max-width:610px){
+  .resume-intro-scene{grid-template-columns:1fr;gap:.1rem}
+  .resume-lifter{justify-self:center;inline-size:min(100%,15rem)}
+}
+@media print{
+  .resume-lifter{display:none}
+  .resume-intro-scene{display:block}
+}
 .resume .intro{margin-bottom:1rem}
 .resume .actions{margin:0 0 1.25rem}
 .resume .actions a{overflow-wrap:anywhere;max-width:100%}
