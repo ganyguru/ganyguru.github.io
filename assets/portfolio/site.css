@@ -122,6 +122,16 @@ h2{font-size:clamp(2.4rem,5.2vw,4.45rem)}
 .paper{display:flex;flex-direction:column;gap:.85rem;padding:clamp(1.15rem,3vw,2rem);border:1px solid var(--line);border-radius:7px;background:var(--paper)}
 .paper.featured{background:var(--tint)}
 .paper.preprint{grid-column:1/-1}
+.preprint-credit{display:flex;align-items:flex-start;gap:.58rem;font-size:.88rem;line-height:1.45}
+.preprint-credit strong{color:var(--ink)}
+.preprint-credit .preprint-credit-context{color:var(--dim)}
+.preprint-bulb{flex:none;color:var(--accent);overflow:visible;margin-top:.03rem}
+.preprint-bulb path{fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+.preprint-glow{fill:currentColor;opacity:.14;filter:blur(2px)}
+@media(prefers-reduced-motion:no-preference){
+  .preprint-glow{animation:idea-glow 2.2s ease-in-out 2}
+}
+@keyframes idea-glow{0%,100%{opacity:.14}50%{opacity:.39}}
 .paper.preprint h3{max-width:35ch;overflow-wrap:anywhere}
 .tag{color:var(--accent)}
 .paper h3{font:400 clamp(1.65rem,3vw,2.5rem)/1.05 var(--display);letter-spacing:-.035em}
