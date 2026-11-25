@@ -2,7 +2,7 @@
   const root = document.documentElement;
   const themeKey = 'portfolio-theme';
   const paletteKey = 'portfolio-palette';
-  const colors = {copper:['#f6f1e7','#1c1c18'],evergreen:['#edf2ec','#1c1c1c'],burgundy:['#f5efe9','#241b20']};
+  const colors = {copper:['#f6f1e7','#1c1c18'],maroon:['#f4efe8','#261b20'],rose:['#f3eee9','#2a1e31']};
   const device = matchMedia('(prefers-color-scheme: dark)');
   const read = key => {
     try { return localStorage.getItem(key); } catch { return null; }
@@ -14,7 +14,7 @@
     if (value === 'light' || value === 'dark') root.dataset.theme = value;
     else delete root.dataset.theme;
   };
-  const validPalette = value => Object.prototype.hasOwnProperty.call(colors, value) ? value : 'evergreen';
+  const validPalette = value => Object.prototype.hasOwnProperty.call(colors, value) ? value : 'copper';
   const setPalette = value => { root.dataset.palette = validPalette(value); };
   const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : device.matches;
   const syncChrome = () => document.querySelector('meta[name="theme-color"]')
@@ -24,8 +24,8 @@
   syncChrome();
   const sync = () => {
     document.querySelector('.theme-toggle')?.setAttribute('aria-pressed', String(isDark()));
-    const picker = document.querySelector('.palette-control select');
-    if (picker) picker.value = root.dataset.palette;
+    document.querySelectorAll('[data-palette-choice]').forEach(item =>
+      item.setAttribute('aria-pressed', String(item.dataset.paletteChoice === root.dataset.palette)));
     syncChrome();
   };
   addEventListener('storage', event => {
@@ -36,19 +36,18 @@
   document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('.theme-toggle');
     const label = document.querySelector('.palette-control');
-    const picker = label?.querySelector('select');
-    if (!button || !picker) return;
+    if (!button || !label) return;
     button.addEventListener('click', () => {
       const next = isDark() ? 'light' : 'dark';
       setTheme(next);
       write(themeKey, next);
       sync();
     });
-    picker.addEventListener('change', () => {
-      setPalette(picker.value);
+    label.querySelectorAll('[data-palette-choice]').forEach(item => item.addEventListener('click', () => {
+      setPalette(item.dataset.paletteChoice);
       write(paletteKey, root.dataset.palette);
       sync();
-    });
+    }));
     device.addEventListener?.('change', sync);
     sync();
     button.hidden = false;
