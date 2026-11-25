@@ -16,7 +16,7 @@
     <ellipse cx="150" cy="173" rx="64" ry="12"/><ellipse cx="150" cy="173" rx="40" ry="7"/><path d="M82 173h-8m152 0h-8"/>
   </g>
   <g class="atoms" role="group" aria-label="Neutral Bohr-style atoms, left to right">
-    <g class="bohr-atom" data-element="lithium" transform="translate(103 45)" stroke="#6594ee" role="img" aria-label="Lithium: 2, 1 electrons in successive shells">
+    <g class="bohr-atom" data-element="lithium" transform="translate(123 37)" stroke="#6594ee" role="img" aria-label="Lithium: 2, 1 electrons in successive shells">
       <circle class="nucleus" r="2.4"/>
       <g class="bohr-shell" data-shell="1"><circle class="shell" r="6.4"/>
         <circle class="electron" cx="5.04" cy="3.94" r="1.65"/>
@@ -26,20 +26,7 @@
         <circle class="electron" cx="-5.24" cy="-11.24" r="1.65"/>
       </g>
     </g>
-    <g class="bohr-atom" data-element="carbon" transform="translate(150 35)" stroke="#be83ea" role="img" aria-label="Carbon: 2, 4 electrons in successive shells">
-      <circle class="nucleus" r="2.4"/>
-      <g class="bohr-shell" data-shell="1"><circle class="shell" r="6.4"/>
-        <circle class="electron" cx="6.15" cy="1.76" r="1.65"/>
-        <circle class="electron" cx="-6.15" cy="-1.76" r="1.65"/>
-      </g>
-      <g class="bohr-shell" data-shell="2"><circle class="shell" r="12.4"/>
-        <circle class="electron" cx="10.95" cy="-5.82" r="1.65"/>
-        <circle class="electron" cx="5.82" cy="10.95" r="1.65"/>
-        <circle class="electron" cx="-10.95" cy="5.82" r="1.65"/>
-        <circle class="electron" cx="-5.82" cy="-10.95" r="1.65"/>
-      </g>
-    </g>
-    <g class="bohr-atom" data-element="sodium" transform="translate(198 45)" stroke="#55a9b7" role="img" aria-label="Sodium: 2, 8, 1 electrons in successive shells">
+    <g class="bohr-atom" data-element="sodium" transform="translate(177 37)" stroke="#55a9b7" role="img" aria-label="Sodium: 2, 8, 1 electrons in successive shells">
       <circle class="nucleus" r="2.4"/>
       <g class="bohr-shell" data-shell="1"><circle class="shell" r="6.4"/>
         <circle class="electron" cx="4.76" cy="4.28" r="1.65"/>
