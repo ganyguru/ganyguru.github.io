@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#f7f6f1">
   <link rel="canonical" href="https://cprganesh.com/">
   <link rel="icon" href="assets/portfolio/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/portfolio/site.css?v=diagram-loops">
+  <link rel="stylesheet" href="assets/portfolio/site.css?v=capability-cards">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ganesh Raghavendran, PhD">
   <meta property="og:description" content="Semiconductor product engineering, process development, and electrochemistry.">
@@ -18,6 +18,7 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Person","name":"Ganesh Raghavendran","url":"https://cprganesh.com/","jobTitle":"Product Engineer 3","worksFor":{"@type":"Organization","name":"Lam Research"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of California San Diego"},{"@type":"CollegeOrUniversity","name":"National Institute of Technology Tiruchirappalli"}],"sameAs":["https://www.linkedin.com/in/cprganesh","https://scholar.google.com/citations?user=bjaZ0LcAAAAJ","https://orcid.org/0000-0002-7194-4207"]}
   </script>
+  <script src="assets/portfolio/capabilities.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -39,9 +40,9 @@
         </div>
       </div>
       <figure class="specimen" aria-labelledby="capability-caption">
-        <figcaption id="capability-caption"><span>FIG. 01</span><span>Three connected capabilities</span></figcaption>
+        <figcaption id="capability-caption">What do you need me for?</figcaption>
         <ol class="capabilities">
-          <li class="capability">
+          <li class="capability"><a class="capability-card" href="#capability-tools" data-capability="tools">
             <svg viewBox="0 0 100 68" aria-hidden="true" focusable="false">
               <path class="diagram-faint" d="M6 14h88M6 34h88M6 54h88M20 5v58M50 5v58M80 5v58"/>
               <path class="connector-base" d="M17 13v11h22v2M81 15v9H64v2M17 34h17M50 10v16m0 28v8m24-20h10v15H63"/>
@@ -56,8 +57,8 @@
               <path d="m48 57 2 4 2-4m20-19 4 4-4 4" class="diagram-faint"/>
             </svg>
             <div><p class="capability-index">01 / PRODUCT ENGINEERING</p><h2>Design &amp; build tools</h2><p>Test chambers, gas delivery, sensors, and controls.</p></div>
-          </li>
-          <li class="capability">
+          </a></li>
+          <li class="capability"><a class="capability-card" href="#capability-process" data-capability="process">
             <svg viewBox="0 0 100 68" aria-hidden="true" focusable="false">
               <path class="diagram-faint" d="M7 14h86M7 34h86M7 54h86M20 5v58M50 5v58M80 5v58"/>
               <path d="M14 13v42h72"/>
@@ -71,8 +72,8 @@
               <path class="plot-trend diagram-animated" pathLength="100" d="M21 48 85 16"/>
             </svg>
             <div><p class="capability-index">02 / PROCESS ENGINEERING</p><h2>Develop &amp; validate processes</h2><p>Design of experiments, metrology, and qualification.</p></div>
-          </li>
-          <li class="capability">
+          </a></li>
+          <li class="capability"><a class="capability-card" href="#capability-electrochemistry" data-capability="electrochemistry">
             <svg viewBox="0 0 100 68" aria-hidden="true" focusable="false">
               <path class="diagram-faint" d="M6 14h88M6 34h88M6 54h88M20 5v58M50 5v58M80 5v58"/>
               <rect x="16" y="15" width="68" height="41" rx="5" class="diagram-fill"/>
@@ -87,8 +88,42 @@
               </g>
             </svg>
             <div><p class="capability-index">03 / ELECTROCHEMISTRY</p><h2>Engineer materials &amp; interfaces</h2><p>Electrolyte design, ion transport, and electrode interfaces.</p></div>
-          </li>
+          </a></li>
         </ol>
+        <div class="capability-details">
+          <article id="capability-tools" class="capability-detail" aria-labelledby="capability-tools-title">
+            <button type="button" class="capability-back" hidden><span aria-hidden="true">←</span> Back to capabilities</button>
+            <p class="capability-index">01 / PRODUCT ENGINEERING</p>
+            <h2 id="capability-tools-title">Design &amp; build tools</h2>
+            <p>I build experimental tools and help customers bring production equipment into service.</p>
+            <ul>
+              <li><strong>Designed and built:</strong> At UC San Diego, I built an automated gas-filling system with mass-flow control, data acquisition, and a LabVIEW interface. I also designed high-pressure test setups for Raman spectroscopy and electrochemistry.</li>
+              <li><strong>Commissioned and diagnosed:</strong> At Elevated Materials, I commissioned an RF power system for deposition and used a residual gas analyzer and helium leak testing to troubleshoot high-vacuum equipment.</li>
+              <li><strong>Support in production:</strong> At Lam, I support customers on the <a href="https://www.lamresearch.com/product/selective-etch-product-family/">Argos and Selis selective-etch platforms</a>, coordinating with cross-functional teams to resolve startup and production issues.</li>
+            </ul>
+          </article>
+          <article id="capability-process" class="capability-detail" aria-labelledby="capability-process-title">
+            <button type="button" class="capability-back" hidden><span aria-hidden="true">←</span> Back to capabilities</button>
+            <p class="capability-index">02 / PROCESS ENGINEERING</p>
+            <h2 id="capability-process-title">Develop &amp; validate processes</h2>
+            <p>I turn hypotheses into experiments and use wafer and materials measurements to decide what to change.</p>
+            <ul>
+              <li><strong>Selective etch:</strong> In Lam’s Fremont lab, I develop and test hypotheses using design of experiments, metrology, and statistical process control. I support product qualification and monitor wafer productivity and performance.</li>
+              <li><strong>Thin films:</strong> At Elevated Materials, I developed sputtering and evaporation processes, measured film thickness and composition, and used root-cause analysis to troubleshoot deposition variability.</li>
+            </ul>
+          </article>
+          <article id="capability-electrochemistry" class="capability-detail" aria-labelledby="capability-electrochemistry-title">
+            <button type="button" class="capability-back" hidden><span aria-hidden="true">←</span> Back to capabilities</button>
+            <p class="capability-index">03 / ELECTROCHEMISTRY</p>
+            <h2 id="capability-electrochemistry-title">Engineer materials &amp; interfaces</h2>
+            <p>I study how electrolyte chemistry and electrode surfaces control ion transport and cell behavior.</p>
+            <ul>
+              <li><strong>Electrolytes:</strong> At UC San Diego, I formulated liquefied-gas and ionic-liquid electrolytes and studied solvation and ion transport in lithium-metal cells.</li>
+              <li><strong>Electrode interfaces:</strong> At Elevated Materials, I evaluated deposited seed layers for lithium-metal nucleation, using impedance and cycling measurements to compare interfaces.</li>
+              <li><strong>Characterization:</strong> I use electrochemical testing and spectroscopy, and built a Python and U-Net workflow to identify phases in high-resolution electron microscopy images.</li>
+            </ul>
+          </article>
+        </div>
       </figure>
     </section>
 

@@ -39,9 +39,8 @@ h1 span{color:var(--accent)}
 .button:hover{background:#463969}
 .specimen{margin:0;overflow:hidden;border:1px solid #d8d2e3;border-radius:8px;background:var(--paper)}
 .specimen figcaption{padding:.76rem .94rem;display:flex;align-items:center;flex-wrap:wrap;gap:.28rem .76rem;background:var(--tint);border-bottom:1px solid #d8d2e3;color:var(--ink);font-size:.84rem;font-weight:700}
-.specimen figcaption span:first-child{color:var(--accent);font:650 .74rem/1.4 var(--mono);letter-spacing:.08em}
 .capabilities{margin:0;padding:0;list-style:none}
-.capability{display:grid;grid-template-columns:clamp(3.85rem,7.3vw,6rem) minmax(0,1fr);gap:.7rem;align-items:center;padding:.75rem .94rem}
+.capability-card{display:grid;grid-template-columns:clamp(3.85rem,7.3vw,6rem) minmax(0,1fr) auto;gap:.7rem;align-items:center;padding:.75rem .94rem;text-decoration:none;cursor:pointer}
 .capability+.capability{border-top:1px solid var(--line)}
 .capability svg{width:100%;height:auto;fill:none;stroke:#65539f;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .diagram-faint{stroke:#b1a5d2;stroke-width:1}
@@ -49,6 +48,18 @@ h1 span{color:var(--accent)}
 .capability-index{font:650 .67rem/1.35 var(--mono);letter-spacing:.03em;color:var(--accent)}
 .capability h2{font:650 1rem/1.25 var(--sans);letter-spacing:-.02em;margin:.25rem 0 .22rem}
 .capability h2+p{font-size:.82rem;line-height:1.35;color:var(--body)}
+.capability-card::after{content:"→";grid-column:3;grid-row:1;color:var(--accent);font-size:.95rem}
+.capability-card:hover{background:var(--tint)}
+.capability-card:focus-visible{outline-offset:-3px}
+.capability-detail{padding:.8rem .94rem 1.04rem;color:var(--body);font-size:.84rem;line-height:1.5}
+.capability-detail:not([hidden]) + .capability-detail:not([hidden]){border-top:1px solid var(--line)}
+.capability-detail h2{font:650 1.15rem/1.23 var(--sans);letter-spacing:-.02em;color:var(--ink);margin:.26rem 0 .46rem}
+.capability-detail ul{padding-left:1.2rem;margin:.64rem 0 0}
+.capability-detail li+li{margin-top:.48rem}
+.capability-detail strong{color:var(--ink)}
+.capability-back{border:0;background:none;color:var(--accent);font:650 .8rem var(--sans);padding:0 .2rem;min-height:44px;cursor:pointer;margin-bottom:.32rem}
+.capability-back:hover{text-decoration:underline}
+.capability-back:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 /* Keep the conceptual diagrams useful as stills when motion is disabled. */
 .connector-flow,.plot-trend{stroke:var(--accent);stroke-width:1.85}
 .connector-base{stroke:#9990b1}
@@ -135,14 +146,19 @@ h2{font-size:clamp(2.4rem,5.2vw,4.45rem)}
 @media(max-width:360px){h1{font-size:2.64rem}.dot{font-size:.66rem}.actions{column-gap:.9rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-copy{animation:none}.button{transition:none}}
 @media print{
-  .header,.footer,.skip{display:none!important}
+  .header,.footer,.skip,.resume-download{display:none!important}
   body{background:white;color:black;font-size:10.5pt;line-height:1.35}
   .resume{width:100%;max-width:none;padding:0}
-  .resume h1{font-size:29pt;margin:.2rem 0 .6rem}
-  .resume .intro{font-size:11pt}
-  .resume .actions{margin-bottom:.7rem}
+  .resume h1{font-size:28pt;margin:.15rem 0 .42rem}
+  .resume .intro{font-size:10.5pt;max-width:none;margin-bottom:.45rem}
+  .resume .actions{margin-bottom:.46rem}
   .resume .actions a{min-height:auto}
-  .resume section{padding-block:.65rem}
+  .resume section{padding-block:.42rem}
   .resume article{break-inside:avoid}
-  .resume h2{font-size:14pt;margin-bottom:.5rem}
+  .resume h2{font-size:13pt;margin-bottom:.32rem}
+  .resume h3{font-size:11pt}
+  .resume article+article{margin-top:.52rem}
+  .resume ul{margin:.35rem 0 .25rem}
+  .resume li+li{margin-top:.24rem}
+  .resume .actions a span{display:none}
 }
