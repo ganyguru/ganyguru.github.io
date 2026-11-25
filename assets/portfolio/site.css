@@ -53,7 +53,7 @@ img,svg{max-inline-size:100%;display:block}
   :is(h1,h2){font-weight:760;letter-spacing:-.067em}
   .specimen{border-color:var(--diagram);box-shadow:0 2px 0 var(--diagram)}
   .specimen figcaption{font-family:var(--mono);text-transform:uppercase;letter-spacing:.045em}
-  .ion-positive circle{stroke:var(--accent)}
+  .ion-pair{stroke:var(--accent)}
 .capability-index{letter-spacing:.065em}
   .capability svg{stroke-linejoin:miter;stroke-width:1.65}
   .capability-card::after{content:"›";font:800 1.2rem var(--mono)}
