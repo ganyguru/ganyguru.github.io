@@ -50,10 +50,6 @@ h1 span{color:var(--accent)}
 .capability h2{font:650 1rem/1.25 var(--sans);letter-spacing:-.02em;margin:.25rem 0 .22rem}
 .capability h2+p{font-size:.82rem;line-height:1.35;color:var(--body)}
 /* Keep the conceptual diagrams useful as stills when motion is disabled. */
-.diagram-motion{position:relative}
-.diagram-pause{position:absolute;right:auto;left:1rem;top:.86rem;margin:0;width:.95rem;height:.95rem;accent-color:var(--accent)}
-.diagram-pause-label{display:flex;align-items:center;min-height:44px;padding:.26rem .9rem .26rem 2.4rem;border-bottom:1px solid var(--line);color:var(--body);font-size:.75rem;cursor:pointer}
-.diagram-pause:focus-visible + .diagram-pause-label{outline:2px solid var(--accent);outline-offset:-3px}
 .connector-flow,.plot-trend{stroke:var(--accent);stroke-width:1.85}
 .connector-base{stroke:#9990b1}
 .ion-arrow{transform-box:view-box;transform-origin:50% 50%;stroke:#7764a8}
@@ -64,10 +60,6 @@ h1 span{color:var(--accent)}
   .ion-positive{animation:positive-drift 5.6s linear infinite}
   .carrier-holes{animation:hole-drift 5.6s linear infinite}
   .ion-arrow{animation:field-reverse 5.6s steps(1,end) infinite}
-  .diagram-pause:checked ~ .capabilities .diagram-animated{animation-play-state:paused}
-}
-@media(prefers-reduced-motion:reduce){
-  .diagram-pause,.diagram-pause-label{display:none}
 }
 @keyframes connector-draw{0%,7%{stroke-dashoffset:100;opacity:0}8%{opacity:1}47%,79%{stroke-dashoffset:0;opacity:1}91%,100%{stroke-dashoffset:0;opacity:0}}
 @keyframes point-in{0%{opacity:0}12%,76%{opacity:1}82%,100%{opacity:0}}
@@ -75,7 +67,6 @@ h1 span{color:var(--accent)}
 @keyframes positive-drift{0%,100%{transform:translateX(0)}50%{transform:translateX(32px)}}
 @keyframes hole-drift{0%,100%{transform:translateX(0)}50%{transform:translateX(-26px)}}
 @keyframes field-reverse{0%,100%{transform:scaleX(1)}50%{transform:scaleX(-1)}}
-.figure-note{padding:.58rem .94rem;border-top:1px solid var(--line);font-size:.72rem;line-height:1.4;color:var(--dim)}
 .section{border-top:1px solid var(--line);padding-block:clamp(3rem,7vw,5.3rem)}
 .section-head{max-width:40rem}
 .kicker{color:var(--accent);margin-bottom:.66rem}
