@@ -6,7 +6,6 @@
   --contact-ink:#fffdf6;--contact-body:#e4edfc;--contact-accent:#ffe06b;--contact-action:#ffdc59;
   --contact-action-hover:#ffed96;--contact-action-ink:#17274d;--diagram:#3150a6;--diagram-faint:#6d86c0;
   --diagram-fill:#d8e4ff;--outline:#ad251b;
-  --ion:#bd2e23;
   --mono:ui-monospace,SFMono-Regular,Consolas,monospace;
   --sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --display:var(--sans);
@@ -20,7 +19,6 @@
   --contact-ink:#fff7e6;--contact-body:#e0eaff;--contact-accent:#ffda53;--contact-action:#ffda53;
   --contact-action-hover:#ffe684;--contact-action-ink:#182344;--diagram:#b8cbff;--diagram-faint:#8399d3;
   --diagram-fill:#344a85;--outline:#ffe684;
-  --ion:#ff9789;
  }
 }
 @media screen and (prefers-color-scheme:dark) {
@@ -32,7 +30,6 @@
   --contact-ink:#fff7e6;--contact-body:#e0eaff;--contact-accent:#ffda53;--contact-action:#ffda53;
   --contact-action-hover:#ffe684;--contact-action-ink:#182344;--diagram:#b8cbff;--diagram-faint:#8399d3;
   --diagram-fill:#344a85;--outline:#ffe684;
-  --ion:#ff9789;
  }
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -56,7 +53,7 @@ img,svg{max-inline-size:100%;display:block}
   :is(h1,h2){font-weight:760;letter-spacing:-.067em}
   .specimen{border-color:var(--diagram);box-shadow:0 2px 0 var(--diagram)}
   .specimen figcaption{font-family:var(--mono);text-transform:uppercase;letter-spacing:.045em}
-  .ion-positive circle{stroke:var(--ion)}
+  .ion-positive circle{stroke:var(--accent)}
 .capability-index{letter-spacing:.065em}
   .capability svg{stroke-linejoin:miter;stroke-width:1.65}
   .capability-card::after{content:"›";font:800 1.2rem var(--mono)}
