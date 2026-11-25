@@ -3,6 +3,7 @@
   <style>
     .mage{transform-box:fill-box;transform-origin:50% 75%}
     .halo,.mage,.atoms{animation:none}
+    .element-symbol{fill:#fff9e9;stroke:none;font:800 10.5px system-ui,sans-serif;text-anchor:middle}
     @media(prefers-reduced-motion:no-preference){.mage,.atoms{animation:lift 4.5s ease-in-out infinite}.halo{animation:aura 4.5s ease-in-out infinite}}
     @keyframes lift{0%,100%{transform:translateY(2px)}50%{transform:translateY(-6px)}}
     @keyframes aura{0%,100%{opacity:.62}50%{opacity:1}}
@@ -12,9 +13,9 @@
     <ellipse cx="150" cy="173" rx="64" ry="12"/><ellipse cx="150" cy="173" rx="40" ry="7"/><path d="M82 173h-8m152 0h-8"/>
   </g>
   <g class="atoms" fill="none" stroke-width="1.6" stroke-linecap="round">
-    <g transform="translate(102 48)" stroke="#5b84d7"><ellipse rx="18" ry="7" transform="rotate(0)"/><ellipse rx="18" ry="7" transform="rotate(60)"/><ellipse rx="18" ry="7" transform="rotate(-60)"/><circle r="2.1" fill="#ecca47"/><circle cx="15" cy="-4" r="2.1" fill="#dcefff"/></g>
-    <g transform="translate(150 36)" stroke="#a963e0"><ellipse rx="21" ry="8"/><ellipse rx="21" ry="8" transform="rotate(60)"/><ellipse rx="21" ry="8" transform="rotate(-60)"/><circle r="3" fill="#ecca47"/><circle cx="-19" cy="-3" r="2.3" fill="#f6e3ff"/></g>
-    <g transform="translate(198 48)" stroke="#4b9cad"><ellipse rx="18" ry="7"/><ellipse rx="18" ry="7" transform="rotate(60)"/><ellipse rx="18" ry="7" transform="rotate(-60)"/><circle r="2.1" fill="#ecca47"/><circle cx="15" cy="4" r="2.1" fill="#ddfff7"/></g>
+    <g transform="translate(102 48)" stroke="#5b84d7"><ellipse rx="18" ry="7" transform="rotate(0)"/><ellipse rx="18" ry="7" transform="rotate(60)"/><ellipse rx="18" ry="7" transform="rotate(-60)"/><circle r="10" fill="#243055"/><text class="element-symbol" y="3.6">Li</text></g>
+    <g transform="translate(150 36)" stroke="#a963e0"><ellipse rx="21" ry="8"/><ellipse rx="21" ry="8" transform="rotate(60)"/><ellipse rx="21" ry="8" transform="rotate(-60)"/><circle r="10" fill="#243055"/><text class="element-symbol" y="3.6">C</text></g>
+    <g transform="translate(198 48)" stroke="#4b9cad"><ellipse rx="18" ry="7"/><ellipse rx="18" ry="7" transform="rotate(60)"/><ellipse rx="18" ry="7" transform="rotate(-60)"/><circle r="10" fill="#243055"/><text class="element-symbol" y="3.6">Na</text></g>
   </g>
   <g class="mage" stroke="#3b3157" stroke-width="2.25" stroke-linejoin="round" stroke-linecap="round">
     <path d="M100 132q-14-9-13-21 10 1 18 13 13-12 26-11l8 23-25 13Z" fill="#efbb35"/>
